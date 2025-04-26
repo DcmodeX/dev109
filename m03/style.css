@@ -1,23 +1,26 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    color: #665544;
-    padding: 0 15% 0 15%;
-  }
+  font-family: Helvetica, Arial, sans-serif;
+  color: #665544;
+  padding: 0 15% 0 15%;
+}
+
 h1 {
-    text-align: center;
-    color: blue;
-    font-family: 'DancingScriptRegular';
-    font-size: 400%;
+  text-align: center;
+  color: blue;
+  font-family: 'Dancing Script', cursive;
+  font-size: 400%;
 }
+
 p {
-    font-family: 'DancingScriptRegular';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 200%;
+  font-family: 'Dancing Script', cursive;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 200%;
 }
+
 i {
-    color: darkgreen;
+  color: darkgreen;
 }
-a { 
+a {
     color: inherit;
-}
+}    
