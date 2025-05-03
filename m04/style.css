@@ -1,1 +1,74 @@
+* {
+    text-align: center;
+    box-sizing: border-box;
+}
+body {
+    width: 90%;
+    margin: 0 auto;
+    background-image: url("https://www.shutterstock.com/shutterstock/photos/1703704024/display_1500/stock-vector-simple-black-childish-hand-drawing-lines-lightbulbs-on-yellow-for-background-texture-wallpaper-1703704024.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header h1 {
+    font-family: 'AveriaRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+ }
+#content {
+    overflow: auto;
+}
+#nav, #feature, #footer {
+    margin: 1%;
+}
+#nav {
+    background-color:#FF00FF; 
+    padding: 0.5em 0;
+}
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+#menu li a {
+    color: white;
+}
+#feature {
+    background-image: url("https://boxy-svg.com/logo.svg");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    text-align: left;
+    height: 10em;
+    margin-bottom: 1em;
+    background-color: #9d1111;
+}
+.column1, .column2, .column3 {
+    width: 31.3%;
+    float: left;
+    margin: 1%;
 
+    height: 10em;
+}
+.column3 {
+    margin-right: 0%;
+}
+.column1 {
+    background-color: #FF0000; /* Red */
+}
+.column2 {
+    background-color: #0000FF; /* Blue */
+}
+.column3 {
+    background-color: #FFFF00; /* Yellow */
+}
+#footer {
+    background-color: #00FFFF; 
+    padding: 0.5em 0;
+}
+#footer p {
+    color: white;
+}
