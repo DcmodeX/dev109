@@ -1,1 +1,151 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
 
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #0056b3;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #007bff;
+    margin-top: 5px;
+}
+
+/* Main Content Area */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Controls Section (Form) */
+.controls {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 350px; 
+    max-width: 450px;
+}
+
+.controls h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0056b3;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="number"],
+.form-group select {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #777;
+    font-size: 0.85em;
+}
+
+button#generateBtn {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+button#generateBtn:hover {
+    background-color: #0056b3;
+}
+
+button#generateBtn:active {
+    background-color: #004085;
+}
+
+/* Rhombus Output Section */
+.rhombus-output {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 550px; 
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.rhombus-output h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0056b3;
+}
+
+#rhombusDisplay {
+    color: #eee; 
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 200px; 
+    min-width: 200px;
+    overflow-x: auto;
+    font-family: 'Cascadia Code', 'Fira Code', 'Lucida Console', monospace; 
+    font-size: 0.9rem;
+    line-height: 1;
+    text-align: left;
+
+}
+
+.rhombus-output .note {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 20px;
+    text-align: center;
+}
