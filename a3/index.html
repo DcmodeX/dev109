@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhombus Generator</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <h1>Dastan Azimov</h1>
+    </header>
+    <main>
+        <section class="controls">
+            <h2>Rhombus Parameters</h2>
+            <form id="rhombusForm">
+                <div class="form-group">
+                    <label for="height">Height of Each Section:</label>
+                    <input type="number" id="height" min="1" max="25" value="10" required
+                           aria-describedby="height-help">
+                    <small id="height-help">Enter a number between 1 and 25.</small>
+                </div>
 
+                <div class="form-group">
+                    <label for="oddColor">Color for Odd Position:</label>
+                    <select id="oddColor" required>
+                        <option value="rebeccapurple">Rebecca Purple</option>
+                        <option value="crimson">Crimson</option>
+                        <option value="forestgreen">Forest Green</option>
+                        <option value="dodgerblue" selected>Dodger Blue</option>
+                        <option value="orange">Orange</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="evenColor">Color for Even Position:</label>
+                    <select id="evenColor" required>
+                        <option value="gold">Gold</option>
+                        <option value="teal">Teal</option>
+                        <option value="darkorchid">Dark Orchid</option>
+                        <option value="hotpink">Hot Pink</option>
+                        <option value="darkslategray" selected>Dark Slate Gray</option>
+                        <option value="saddlebrown">Saddle Brown</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="symbol">Symbol to Use:</label>
+                    <select id="symbol" required>
+                        <option value="*" selected>*</option>
+                        <option value="^">^</option>
+                        <option value="%">%</option>
+                        <option value="#">#</option>
+                        <option value="@">@</option>
+                        <option value="$">$</option>
+                        <option value="&amp;">&amp;</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="generateBtn">Generate Rhombus</button>
+            </form>
+        </section>
+
+        <section class="rhombus-output">
+            <h2>Generated Rhombus</h2>
+            <pre id="rhombusDisplay" aria-live="polite">
+            </pre>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
